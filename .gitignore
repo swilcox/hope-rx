@@ -1,0 +1,8 @@
+dev.db
+*.pyc
+*.swp
+*.project
+.pydevproject
+*~
+.idea
+local_settings.py
