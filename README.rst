@@ -16,3 +16,9 @@ Installing Requirements
 Create a virtualenv and then run::
 
     pip install -r hoperx_project/requirements/project.txt
+
+Contributors
+------------
+
+* Steven Wilcox
+* Patrick Altman
