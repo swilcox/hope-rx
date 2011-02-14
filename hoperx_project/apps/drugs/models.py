@@ -1,10 +1,12 @@
 from django.db import models
 
-
 class Category(models.Model):
     name = models.CharField(max_length=100,db_index=True)
     slug = models.SlugField()
 
+    class Meta:
+        verbose_name_plural = 'Categories'
+        
     def __unicode__(self):
         return self.name
 
@@ -34,6 +36,6 @@ class Drug(models.Model):
     default_dispense_quantity = models.IntegerField(default=1)
 
     def __unicode__(self):
-        return '%s %s %s' % self.medicine, self.form, self.strength
+        return '%s %s %s' % (self.medicine, self.form, self.strength)
 
     

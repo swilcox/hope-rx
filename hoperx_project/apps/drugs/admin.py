@@ -1,19 +1,14 @@
 from django.contrib import admin
-
-from drugs.models import DrugForm, Unit, Category, Drug
-
+from models import DrugForm, Unit, Category, Drug
 
 class CategoryAdmin(admin.ModelAdmin):
-    pass
-
+    prepopulated_fields = {"slug": ("name",)}
 
 class DrugFormAdmin(admin.ModelAdmin):
     pass
 
-
 class UnitAdmin(admin.ModelAdmin):
     pass
-
 
 class DrugAdmin(admin.ModelAdmin):
     pass
